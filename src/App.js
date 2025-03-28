@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
 
 function App() {
+  const submit = (e) => {
+    e.preventDefault(); // Previene el evento
+    const data = Array.from(new FormData(e.target)); // new FormData(e.target) Convierte en objeto y Array.from lo convierte en arreglos
+    console.log(Object.fromEntries(data)); // Object.fromEntries Toma un arreglo y toma el priemer valor de estos arreglos y lo utiliza como la llave y el segundo comos su valor 
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <form onSubmit={submit}> 
+      <div>
+        <span>
+          Hola mundo
+        </span>
+        <input name='campo'/>
+      </div>
+      <input name='campo2'/>
+      <input type='submit' value='Enviar'/>
+    </form>
   );
 }
 
