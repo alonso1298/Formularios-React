@@ -1,27 +1,24 @@
-import { useRef } from "react";
 
-const App = () => {
-    const input = useRef()
-    const file = useRef()
-    const submit = () => {
-        console.log(input.current.value);
-        console.log(file.current.files[0]);
-        const form = new FormData();
-        form.append('archivo', file.current.files[0]);
-        form.append('campo', input.current.value);
-        fetch('/hola', { method: 'POST', body: form})
+function App() {
+    const submit = (e) => {
+      e.preventDefault(); // Previene el evento
+      const data = Array.from(new FormData(e.target)); // new FormData(e.target) Convierte en arreglos de lonjitud 2 
+      console.log(Object.fromEntries(data)); // Object.fromEntries Transforma a un objeto, toma sus propiedades con sus valores y toma el priemer valor de estos arreglos y lo utiliza como la llave y el segundo comos su valor 
     }
-
-    return(
+    return (
+      <form onSubmit={submit}> 
         <div>
-            <div>
-                <span>hola</span>
-                <input type="text" name="campo" ref={input} />
-                <input type="file" ref={file} />
-            </div>
-            <input type="submit" name="Enviar" onClick={submit} />
+          <span>
+            Hola mundo
+          </span>
+          <input name='campo'/>
         </div>
-    )
-}
-
-export default App;
+        <input name='campo2'/>
+        <input type="file" name="archivo" />
+        <input type='submit' value='Enviar'/>
+      </form>
+    );
+  }
+  
+  export default App;
+  
