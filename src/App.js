@@ -1,24 +1,17 @@
+import { useState } from "react";
 
-function App() {
-    const submit = (e) => {
-      e.preventDefault(); // Previene el evento
-      const data = Array.from(new FormData(e.target)); // new FormData(e.target) Convierte en arreglos de lonjitud 2 
-      console.log(Object.fromEntries(data)); // Object.fromEntries Transforma a un objeto, toma sus propiedades con sus valores y toma el priemer valor de estos arreglos y lo utiliza como la llave y el segundo comos su valor 
+const App = () => {
+    const [value, setValue] = useState('')
+    const handleChange = (e) => {
+        setValue(e.target.value);
     }
-    return (
-      <form onSubmit={submit}> 
+    console.log(value);
+    return(
         <div>
-          <span>
-            Hola mundo
-          </span>
-          <input name='campo'/>
+            {value.length < 5 ? <span>Longitud minima de 5</span> : null}
+            <input type="text" name="normal" value={value} onChange={handleChange}/>
         </div>
-        <input name='campo2'/>
-        <input type="file" name="archivo" />
-        <input type='submit' value='Enviar'/>
-      </form>
-    );
-  }
-  
-  export default App;
-  
+    )
+}
+
+export default App;
