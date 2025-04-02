@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# Formularios en React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este repositorio contiene ejemplos y prácticas sobre el manejo de formularios en React, incluyendo cómo acceder a sus valores y gestionar eventos.
 
-## Available Scripts
+## 🚀 Instalación y configuración
 
-In the project directory, you can run:
+1. Clonar el repositorio:
 
-### `npm start`
+``` bash
+git clone https://github.com/alonso1298/Formularios-React.git
+cd Formularios-React
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. Instalar dependencias:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+``` bash 
+npm install
+```
 
-### `npm test`
+3. Iniciar el servidor de desarrollo:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+``` bash 
+npm run dev
+```
 
-### `npm run build`
+## 📌 Tecnologías utilizadas
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- React
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- JavaScript
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- CSS
 
-### `npm run eject`
+## 📚 Conceptos abordados
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Manejo de eventos con onChange
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Uso de Componentes controlados y no controlados
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Manejo de formularios con uncontrolled components
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Carga de archivos con uncontrolled components y useRef
 
-## Learn More
+- Validación básica de formularios
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 📚 Recursos útiles
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+[Documentación oficial de React](https://es.react.dev/)
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 👥 Contribuciones
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Si deseas contribuir, haz un fork del repositorio, crea una rama con tu feature y envía un pull request.
